@@ -1,0 +1,161 @@
+{
+  "language": "english",
+  "procedures": {
+    "single_tooth_implant": {
+      "title": "Single Tooth Implant",
+      "questions": [
+        {"id":1,"question":"What is a single tooth implant made of?","options":["A) Plastic","B) Titanium screw","C) Gold","D) Ceramic only"],"correct":"B"},
+        {"id":2,"question":"How long does the implant usually take to fuse with the jawbone?","options":["A) 1 week","B) 3–6 months","C) 1 year","D) 2 weeks"],"correct":"B"},
+        {"id":3,"question":"What is the biggest benefit of a single tooth implant?","options":["A) It is the cheapest option","B) It stops bone loss and looks natural","C) It is removable","D) No need for any surgery"],"correct":"B"},
+        {"id":4,"question":"After implant placement, when is the final crown fixed?","options":["A) Same day","B) After 3–6 months of healing","C) After 1 month","D) Never"],"correct":"B"},
+        {"id":5,"question":"What is the success rate of single tooth implants after 10 years?","options":["A) 50–60%","B) 95–98%","C) 80%","D) 100%"],"correct":"B"},
+        {"id":6,"question":"Who should NOT get an implant without extra care?","options":["A) Healthy young person","B) Smoker or person with uncontrolled diabetes","C) Person with good teeth","D) Child under 18"],"correct":"B"},
+        {"id":7,"question":"During implant surgery, do you feel pain?","options":["A) Yes, very painful","B) No – local anesthesia is given","C) Only slight pain","D) Only if you move"],"correct":"B"},
+        {"id":8,"question":"What happens if you don’t replace a missing tooth with an implant?","options":["A) Nothing","B) Neighbouring teeth shift and bone melts away","C) Only gums hurt","D) You can eat better"],"correct":"B"}
+      ]
+    },
+    "multiple_tooth_implant": {
+      "title": "Multiple Tooth Implant",
+      "questions": [
+        {"id":1,"question":"How many implants are usually placed for 2–4 missing teeth?","options":["A) 1","B) 2–4","C) 8","D) 10"],"correct":"B"},
+        {"id":2,"question":"What is the main advantage over a traditional bridge?","options":["A) No healthy teeth are cut","B) It is cheaper","C) It is removable","D) Faster healing"],"correct":"A"},
+        {"id":3,"question":"Healing time is same as single tooth implant?","options":["A) Yes, 3–6 months","B) Only 1 month","C) 1 year","D) No healing needed"],"correct":"A"},
+        {"id":4,"question":"Success rate is usually","options":["A) Lower than single implant","B) Same or slightly higher","C) 50%","D) 70%"],"correct":"B"},
+        {"id":5,"question":"Can multiple implants support individual crowns?","options":["A) No","B) Yes","C) Only bridges","D) Only dentures"],"correct":"B"},
+        {"id":6,"question":"Main risk is same as single implant:","options":["A) Infection ~5–7%","B) No risk","C) Always fails","D) Only cosmetic problem"],"correct":"A"},
+        {"id":7,"question":"After healing, the final teeth are","options":["A) Removable","B) Fixed crowns or small bridge","C) Temporary only","D) Metal only"],"correct":"B"},
+        {"id":8,"question":"Why is it better than one big bridge on natural teeth?","options":["A) Preserves bone and healthy teeth","B) Costs less","C) Faster","D) No visits needed"],"correct":"A"}
+      ]
+    },
+    "full_arch_implant": {
+      "title": "Full Arch Implant (All-on-4 / All-on-6)",
+      "questions": [
+        {"id":1,"question":"How many implants are used for the entire upper or lower jaw?","options":["A) 1–2","B) 4 or 6","C) 12","D) 20"],"correct":"B"},
+        {"id":2,"question":"What is “Teeth in a Day”?","options":["A) Temporary teeth fixed on same day of surgery","B) Final teeth in one day","C) Only cleaning","D) No surgery"],"correct":"A"},
+        {"id":3,"question":"Success rate of All-on-4 after 5–10 years?","options":["A) 70%","B) 96–98%","C) 50%","D) 85%"],"correct":"B"},
+        {"id":4,"question":"Main benefit compared to complete denture?","options":["A) Fixed teeth, no removal","B) Cheaper","C) No surgery","D) Temporary"],"correct":"A"},
+        {"id":5,"question":"After surgery you get","options":["A) No teeth for 6 months","B) Temporary fixed teeth same day","C) Only soft diet forever","D) Removable denture"],"correct":"B"},
+        {"id":6,"question":"All-on-6 is safer than All-on-4 because","options":["A) More implants share the load","B) Less cost","C) Faster surgery","D) No healing"],"correct":"A"},
+        {"id":7,"question":"Can you eat normally after final bridge?","options":["A) No","B) Yes, almost like natural teeth","C) Only liquids","D) Only soft food"],"correct":"B"},
+        {"id":8,"question":"Who usually chooses full arch implants?","options":["A) People with all teeth missing or badly damaged","B) People with only one tooth missing","C) Children","D) People who want removable dentures"],"correct":"A"}
+      ]
+    },
+    "implant_supported_bridge": {
+      "title": "Implant-Supported Bridge",
+      "questions": [
+        {"id":1,"question":"How many implants support a bridge of 3–5 teeth?","options":["A) 1","B) 2 or 3","C) 6","D) 10"],"correct":"B"},
+        {"id":2,"question":"Advantage over traditional bridge?","options":["A) No grinding of healthy side teeth","B) Cheaper","C) Removable","D) Faster"],"correct":"A"},
+        {"id":3,"question":"Healing time before final bridge?","options":["A) 3–6 months","B) Same day","C) 1 week","D) 2 years"],"correct":"A"},
+        {"id":4,"question":"Success rate is","options":["A) Same as single implant (95–98%)","B) Lower","C) 60%","D) 100%"],"correct":"A"},
+        {"id":5,"question":"The bridge is","options":["A) Removable by patient","B) Fixed (screwed or cemented)","C) Plastic","D) Temporary only"],"correct":"B"},
+        {"id":6,"question":"Main risk?","options":["A) Same as single implant (infection 5–7%)","B) No risk","C) Always loose","D) Colour change"],"correct":"A"},
+        {"id":7,"question":"Why is bone preserved?","options":["A) Implants act like natural roots","B) Bridge is heavy","C) No surgery","D) Only gums used"],"correct":"A"},
+        {"id":8,"question":"Best for?","options":["A) 3–5 missing teeth in a row","B) All teeth missing","C) Single tooth","D) Front teeth only"],"correct":"A"}
+      ]
+    },
+    "implant_supported_denture": {
+      "title": "Implant-Supported Denture (Snap-in)",
+      "questions": [
+        {"id":1,"question":"How many implants are usually placed?","options":["A) 1","B) 2–4","C) 10","D) 0"],"correct":"B"},
+        {"id":2,"question":"How does the denture stay in place?","options":["A) Glue","B) Snaps onto implants","C) Suction only","D) Wires"],"correct":"B"},
+        {"id":3,"question":"Chewing efficiency compared to normal denture?","options":["A) 20–30%","B) 80–90% of natural teeth","C) Same as natural","D) 10%"],"correct":"B"},
+        {"id":4,"question":"Can patient remove the denture?","options":["A) No","B) Yes, for cleaning","C) Only dentist can","D) Never"],"correct":"B"},
+        {"id":5,"question":"Attachments need replacement every","options":["A) 1–2 years","B) 10 years","C) Never","D) 6 months"],"correct":"A"},
+        {"id":6,"question":"Main benefit?","options":["A) No more loose denture while eating/speaking","B) Cheaper than normal denture","C) No surgery","D) Lasts forever without care"],"correct":"A"},
+        {"id":7,"question":"Healing time before snapping denture?","options":["A) 3–6 months","B) Same day","C) 1 week","D) 1 year"],"correct":"A"},
+        {"id":8,"question":"Success rate same as?","options":["A) Regular implants (95–98%)","B) Much lower","C) 50%","D) 70%"],"correct":"A"}
+      ]
+    },
+    "bone_grafting": {
+      "title": "Bone Grafting",
+      "questions": [
+        {"id":1,"question":"Why is bone grafting done?","options":["A) When there is not enough bone for implant","B) To make teeth whiter","C) For cleaning","D) Only for children"],"correct":"A"},
+        {"id":2,"question":"Healing time before placing implant?","options":["A) 3–6 months","B) 1 week","C) Same day","D) No healing"],"correct":"A"},
+        {"id":3,"question":"Success rate of bone graft?","options":["A) Up to 100% when done correctly","B) 50%","C) 30%","D) 70%"],"correct":"A"},
+        {"id":4,"question":"Common sources of bone?","options":["A) Patient’s own, donor or synthetic","B) Only plastic","C) Only gold","D) Teeth"],"correct":"A"},
+        {"id":5,"question":"Main risk?","options":["A) Swelling or infection (<5–8%)","B) No risk","C) Always fails","D) Pain forever"],"correct":"A"},
+        {"id":6,"question":"After grafting, what covers the bone?","options":["A) Special membrane","B) Nothing","C) Crown","D) Denture"],"correct":"A"},
+        {"id":7,"question":"Is bone grafting painful?","options":["A) Done under local anesthesia, mild discomfort","B) Very painful","C) No anesthesia needed","D) Only for upper jaw"],"correct":"A"},
+        {"id":8,"question":"Can implant be placed without grafting if bone is enough?","options":["A) Yes","B) No, always needed","C) Only for children","D) Only in India"],"correct":"A"}
+      ]
+    },
+    "crown": {
+      "title": "Crown",
+      "questions": [
+        {"id":1,"question":"What is a crown?","options":["A) Cap that covers the whole tooth","B) Filling inside tooth","C) Removable plate","D) Thin shell only on front"],"correct":"A"},
+        {"id":2,"question":"How much tooth is removed?","options":["A) All of it","B) Outer layer (shaped)","C) Nothing","D) Only half"],"correct":"B"},
+        {"id":3,"question":"How long does a crown usually last?","options":["A) 1–2 years","B) 10–15+ years","C) Forever","D) 6 months"],"correct":"B"},
+        {"id":4,"question":"Risk of needing root canal after crown?","options":["A) 5–10%","B) 50%","C) 0%","D) 100%"],"correct":"A"},
+        {"id":5,"question":"Material used for strong crowns?","options":["A) Zirconia or porcelain","B) Plastic only","C) Gold only","D) Wood"],"correct":"A"},
+        {"id":6,"question":"Temporary crown is given","options":["A) While permanent is being made","B) Forever","C) Never","D) Only for front teeth"],"correct":"A"},
+        {"id":7,"question":"Can you eat normally after permanent crown?","options":["A) Yes, after anesthesia wears off","B) Only liquids for 1 month","C) No hard food ever","D) Only soft food"],"correct":"A"},
+        {"id":8,"question":"Biggest benefit?","options":["A) Saves damaged tooth and makes it strong","B) Changes colour only","C) Makes tooth smaller","D) Removable"],"correct":"A"}
+      ]
+    },
+    "bridge": {
+      "title": "Bridge (Traditional Tooth-Supported)",
+      "questions": [
+        {"id":1,"question":"How many missing teeth can a bridge replace?","options":["A) 1–3","B) 10","C) All teeth","D) Only 1"],"correct":"A"},
+        {"id":2,"question":"Healthy teeth on sides are","options":["A) Cut and covered with crowns","B) Not touched","C) Removed","D) Only cleaned"],"correct":"A"},
+        {"id":3,"question":"Main disadvantage?","options":["A) Bone loss under missing tooth area","B) Cheaper","C) No visits","D) Removable"],"correct":"A"},
+        {"id":4,"question":"How long does bridge usually last?","options":["A) 10–15 years","B) 1 year","C) Forever","D) 6 months"],"correct":"A"},
+        {"id":5,"question":"Risk of decay under bridge?","options":["A) 10–20% over 10 years","B) 0%","C) 100%","D) 5%"],"correct":"A"},
+        {"id":6,"question":"Bridge is","options":["A) Fixed, cannot be removed by patient","B) Removable","C) Snap-in","D) Temporary only"],"correct":"A"},
+        {"id":7,"question":"Compared to implant bridge?","options":["A) Faster and cheaper but damages healthy teeth","B) Better for bone","C) No difference","D) Longer healing"],"correct":"A"},
+        {"id":8,"question":"After bridge cementation, you can eat","options":["A) After 1–2 hours","B) Next day only","C) After 1 week","D) Never hard food"],"correct":"A"}
+      ]
+    },
+    "complete_denture": {
+      "title": "Complete Denture",
+      "questions": [
+        {"id":1,"question":"Complete denture is used when?","options":["A) All teeth in one jaw are missing","B) Only one tooth missing","C) Front teeth only","D) Implants placed"],"correct":"A"},
+        {"id":2,"question":"How many visits are usually needed?","options":["A) 5–7","B) 1","C) 2","D) 10"],"correct":"A"},
+        {"id":3,"question":"Chewing power compared to natural teeth?","options":["A) 20–30%","B) 90%","C) 100%","D) 50%"],"correct":"A"},
+        {"id":4,"question":"Main problem over time?","options":["A) Bone shrinks → denture becomes loose","B) Colour fades","C) Too tight","D) No problem"],"correct":"A"},
+        {"id":5,"question":"Denture should be removed","options":["A) At night for cleaning and gum rest","B) Never","C) Only when eating","D) Only in morning"],"correct":"A"},
+        {"id":6,"question":"Sore spots are","options":["A) Common in first few weeks, adjusted by dentist","B) Permanent","C) Never happen","D) Only in upper jaw"],"correct":"A"},
+        {"id":7,"question":"Material of teeth in denture?","options":["A) Acrylic (plastic)","B) Metal","C) Real teeth","D) Gold"],"correct":"A"},
+        {"id":8,"question":"Benefit?","options":["A) Restores smile and basic chewing quickly","B) Stronger than implants","C) No adjustments ever","D) Lasts lifetime without change"],"correct":"A"}
+      ]
+    },
+    "partial_denture": {
+      "title": "Partial Denture",
+      "questions": [
+        {"id":1,"question":"Partial denture is used when?","options":["A) Some natural teeth still remain","B) All teeth missing","C) Only front teeth missing","D) Implants done"],"correct":"A"},
+        {"id":2,"question":"It stays in place by","options":["A) Clasps on remaining teeth","B) Implants","C) Glue","D) Suction"],"correct":"A"},
+        {"id":3,"question":"Framework is usually made of","options":["A) Metal or flexible plastic","B) Only plastic","C) Gold","D) Ceramic"],"correct":"A"},
+        {"id":4,"question":"Main disadvantage?","options":["A) May feel bulky, clasps visible sometimes","B) Very expensive","C) Fixed forever","D) No cleaning needed"],"correct":"A"},
+        {"id":5,"question":"Bone loss under partial denture?","options":["A) Yes, over time","B) No","C) Only upper","D) Faster than complete"],"correct":"A"},
+        {"id":6,"question":"How often should it be removed?","options":["A) Daily for cleaning","B) Never","C) Only at night","D) Weekly"],"correct":"A"},
+        {"id":7,"question":"Compared to implant-supported?","options":["A) Cheaper but less stable","B) More stable","C) Same cost","D) No difference"],"correct":"A"},
+        {"id":8,"question":"Adjustments are done","options":["A) In first few weeks if sore","B) Never","C) After 1 year only","D) Every month"],"correct":"A"}
+      ]
+    },
+    "veneer": {
+      "title": "Veneer (Porcelain Laminate)",
+      "questions": [
+        {"id":1,"question":"Veneer is","options":["A) Thin porcelain shell on front of tooth","B) Full cap","C) Filling","D) Removable"],"correct":"A"},
+        {"id":2,"question":"How much enamel is removed?","options":["A) Very little (0.3–0.5 mm)","B) Half the tooth","C) All enamel","D) None"],"correct":"A"},
+        {"id":3,"question":"Best for","options":["A) Front teeth – colour, shape, gaps","B) Back teeth chewing","C) Missing teeth","D) Root canal teeth"],"correct":"A"},
+        {"id":4,"question":"Veneers are","options":["A) Permanently bonded","B) Removable daily","C) Temporary","D) Snap-on"],"correct":"A"},
+        {"id":5,"question":"Risk of chipping?","options":["A) Less than 5%","B) 50%","C) 100%","D) 20%"],"correct":"A"},
+        {"id":6,"question":"How long do veneers last?","options":["A) 10–15+ years with care","B) 1 year","C) Forever without care","D) 2 years"],"correct":"A"},
+        {"id":7,"question":"Can you eat hard food?","options":["A) Yes, but avoid very hard things like ice","B) No","C) Only liquids","D) After 6 months only"],"correct":"A"},
+        {"id":8,"question":"Main benefit?","options":["A) Beautiful smile with minimal tooth reduction","B) Cheapest option","C) Stronger than crown","D) Removable"],"correct":"A"}
+      ]
+    },
+    "full_mouth_rehabilitation": {
+      "title": "Full Mouth Rehabilitation",
+      "questions": [
+        {"id":1,"question":"Full mouth rehabilitation means","options":["A) Complete makeover of all teeth using crowns, veneers, implants etc.","B) Cleaning only","C) One crown","D) Denture only"],"correct":"A"},
+        {"id":2,"question":"How long does treatment usually take?","options":["A) 6–12 months","B) 1 week","C) 1 day","D) 1 month"],"correct":"A"},
+        {"id":3,"question":"First step?","options":["A) Full diagnosis (photos, scans, models)","B) Final crowns","C) Extraction","D) No planning"],"correct":"A"},
+        {"id":4,"question":"Temporary restorations are used","options":["A) Yes, while final work is done","B) No","C) Only at end","D) Never"],"correct":"A"},
+        {"id":5,"question":"Main goal?","options":["A) Restore bite, function and beautiful smile","B) Only whiten teeth","C) Only change shape","D) Remove all teeth"],"correct":"A"},
+        {"id":6,"question":"Can implants be part of full mouth rehab?","options":["A) Yes","B) No","C) Only crowns","D) Only veneers"],"correct":"A"},
+        {"id":7,"question":"Risk compared to single crown?","options":["A) Longer treatment, higher total cost","B) No risk","C) Same as one crown","D) Shorter"],"correct":"A"},
+        {"id":8,"question":"Who needs it?","options":["A) People with severe wear, bite problems or many damaged teeth","B) Healthy teeth","C) One missing tooth","D) Children"],"correct":"A"}
+      ]
+    }
+  }
+}
