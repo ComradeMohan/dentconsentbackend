@@ -32,11 +32,12 @@ try {
     $stmtChecklists->execute([$operationTypeId]);
     $checklists = $stmtChecklists->fetchAll(PDO::FETCH_ASSOC);
 
-    // Fetch Operation Success Rate
-    $stmtSuccessRate = $pdo->prepare("SELECT success_rate FROM operation_types WHERE id = ?");
-    $stmtSuccessRate->execute([$operationTypeId]);
-    $successRateResult = $stmtSuccessRate->fetch(PDO::FETCH_ASSOC);
-    $successRate = $successRateResult ? (float)$successRateResult['success_rate'] : null;
+    // Fetch Operation Success Rate and Video URL
+    $stmtOpType = $pdo->prepare("SELECT success_rate, video_url FROM operation_types WHERE id = ?");
+    $stmtOpType->execute([$operationTypeId]);
+    $opTypeResult = $stmtOpType->fetch(PDO::FETCH_ASSOC);
+    $successRate = $opTypeResult ? (float)$opTypeResult['success_rate'] : null;
+    $videoUrl = $opTypeResult ? $opTypeResult['video_url'] : null;
 
 
     // Fetch Procedure Alternatives
@@ -51,7 +52,8 @@ try {
         'key_topics' => $keyTopics,
         'checklists' => $checklists,
         'alternatives' => $alternatives,
-        'success_rate' => $successRate
+        'success_rate' => $successRate,
+        'video_url' => $videoUrl
     ]);
 } catch (Exception $e) {
     echo json_encode(['success' => false, 'error' => $e->getMessage()]);

@@ -58,7 +58,8 @@ try {
     $emailService = new EmailService();
     $emailService->sendOTP($email, $otp, $action);
 
-} catch (Exception $e) {
+} catch (Throwable $e) {
+    error_log("OTP Error for $email: " . $e->getMessage());
     // Only send error if we haven't flushed headers yet
     if (!headers_sent()) {
         http_response_code(500);

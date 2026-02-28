@@ -1,9 +1,6 @@
 <?php
+require_once __DIR__ . '/error_handler.php';
 require_once __DIR__ . '/config.php';
-
-// Prevent PHP from echoing errors as HTML, which breaks JSON responses
-ini_set('display_errors', 0);
-error_reporting(E_ALL);
 
 if (!headers_sent()) {
     header('Content-Type: application/json');

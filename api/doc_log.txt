@@ -1,0 +1,148 @@
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_13_1771743925.pdf
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_13_1771745239.pdf
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_17_1771771626.pdf
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_17_1771771627.pdf
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_17_1771771626.pdf
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/consent_18_1771857360.pdf
+    [anesthesia_pdf_url] => 
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 
+    [error] => Signature Saved but PDF Failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pp.age' in 'field list'
+)
+Array
+(
+    [success] => 
+    [error] => Signature Saved but PDF Failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pp.age' in 'field list'
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771863383.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1771863384.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771865154.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1771865155.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771865493.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1771865494.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771865494.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1771865495.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771867306.pdf
+    [anesthesia_pdf_url] => 
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1771918894.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1771918895.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1772017663.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1772017663.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 
+    [error] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pp.email' in 'field list'
+)
+Array
+(
+    [success] => 
+    [error] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pp.email' in 'field list'
+)
+Array
+(
+    [success] => 
+    [error] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pp.email' in 'field list'
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1772019863.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_14_1772019864.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_14_1772021790.pdf
+    [anesthesia_pdf_url] => 
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_23_1772130973.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_23_1772130973.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_23_1772184757.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_23_1772184758.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_23_1772204409.pdf
+    [anesthesia_pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/anesthesia_consent_23_1772204410.pdf
+    [implant_pdf_url] => 
+)
+Array
+(
+    [success] => 1
+    [pdf_url] => http://172.27.207.54/dentconsent/backend/api/uploads/consent_forms/implant_consent_26_1772214278.pdf
+    [anesthesia_pdf_url] => 
+    [implant_pdf_url] => 
+)

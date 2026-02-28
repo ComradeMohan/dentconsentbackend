@@ -18,7 +18,7 @@ try {
                    t.anesthesia_pdf_url, t.anesthesia_required,
                    p.full_name AS patient_name,
                    u_p.profile_image AS patient_image,
-                   ot.success_rate
+                   ot.success_rate, ot.specialization_id
             FROM treatments t
             JOIN patient_profiles p ON t.patient_id = p.user_id
             JOIN users u_p ON t.patient_id = u_p.id
@@ -33,7 +33,7 @@ try {
                    t.anesthesia_pdf_url, t.anesthesia_required,
                    d.full_name AS doctor_name,
                    u_d.profile_image AS doctor_image,
-                   ot.success_rate
+                   ot.success_rate, ot.specialization_id
             FROM treatments t
             JOIN doctor_profiles d ON t.doctor_id = d.user_id
             JOIN users u_d ON t.doctor_id = u_d.id

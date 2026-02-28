@@ -1,0 +1,66 @@
+﻿Tables_in_dent_consent
+audit_logs
+consent_checklist_records
+consent_records
+doctor_profiles
+educational_videos
+key_topics
+messages
+operation_types
+otps
+patient_medical_conditions
+patient_profiles
+procedure_alternatives
+procedure_benefits
+procedure_checklists
+procedure_risks
+procedure_steps
+quiz_attempts
+specializations
+treatments
+users
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+specialization_id	int(11)	NO	MUL	NULL	
+name	varchar(150)	NO		NULL	
+slug	varchar(100)	NO	UNI	NULL	
+description	text	YES		NULL	
+success_rate	decimal(5,2)	YES		NULL	
+icon	varchar(100)	YES		NULL	
+video_url	varchar(500)	YES		NULL	
+created_at	timestamp	NO		current_timestamp()	
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+operation_type_id	int(11)	NO	MUL	NULL	
+step_number	int(11)	NO		NULL	
+title	varchar(200)	NO		NULL	
+description	text	YES		NULL	
+duration_note	varchar(100)	YES		NULL	
+created_at	timestamp	NO		current_timestamp()	
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+operation_type_id	int(11)	NO	MUL	NULL	
+title	varchar(200)	NO		NULL	
+video_url	varchar(500)	NO		NULL	
+thumbnail_url	varchar(500)	YES		NULL	
+duration_seconds	int(11)	YES		NULL	
+display_order	int(11)	YES		1	
+created_at	timestamp	NO		current_timestamp()	
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+operation_type_id	int(11)	NO	MUL	NULL	
+title	varchar(150)	NO		NULL	
+description	text	YES		NULL	
+display_order	int(11)	YES		1	
+Field	Type	Null	Key	Default	Extra
+id	bigint(20) unsigned	NO	PRI	NULL	auto_increment
+operation_type_id	int(11)	NO	MUL	NULL	
+title	varchar(255)	NO		NULL	
+description	text	YES		NULL	
+tag	varchar(50)	YES		NULL	
+display_order	int(11)	YES		0	
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+name	varchar(100)	NO		NULL	
+description	text	YES		NULL	
+created_at	timestamp	NO		current_timestamp()	
