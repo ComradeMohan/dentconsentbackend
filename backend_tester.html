@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentConsent Backend Workflow Tester</title>
+    <style>
+        :root {
+            --primary-color: #008080;
+            --secondary-color: #004d4d;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --border-radius: 12px;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 0.95rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .response-area {
+            margin-top: 20px;
+            padding: 15px;
+            background: #272822;
+            color: #f8f8f2;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            max-height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: #ddd;
+            color: #555;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            width: auto;
+            margin-top: 0;
+        }
+
+        .tab-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        #signaturePreview {
+            width: 100%;
+            height: 100px;
+            border: 1px dashed #ccc;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DentConsent API Tester</h1>
+        <p>Test the backend workflow seamlessly.</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showSection('auth')">Auth & OTP</button>
+        <button class="tab-btn" onclick="showSection('treatments')">Treatments</button>
+        <button class="tab-btn" onclick="showSection('patients')">Patients & Profiles</button>
+        <button class="tab-btn" onclick="showSection('pdf')">PDF & Signatures</button>
+    </div>
+
+    <div class="container">
+        <!-- Auth Section -->
+        <div id="authSection" class="section">
+            <div class="card form-card">
+                <h2>1. Send OTP</h2>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="otpEmail" value="test@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Action</label>
+                    <select id="otpAction">
+                        <option value="Registration">Registration</option>
+                        <option value="Password Reset">Password Reset</option>
+                        <option value="Login">Login</option>
+                    </select>
+                </div>
+                <button onclick="testApi('api/send_otp.php', 'otpEmail', 'otpAction')">Send OTP</button>
+                <div id="response_send_otp" class="response-area">Response will appear here...</div>
+            </div>
+
+            <div class="card form-card" style="margin-top: 20px;">
+                <h2>2. Verify OTP</h2>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="verifyEmail" value="test@example.com">
+                </div>
+                <div class="form-group">
+                    <label>OTP Code</label>
+                    <input type="text" id="verifyOtp" placeholder="4 digits">
+                </div>
+                <button onclick="testApi('api/verify_otp.php', 'verifyEmail', 'verifyOtp')">Verify OTP</button>
+                <div id="response_verify_otp" class="response-area">Response will appear here...</div>
+            </div>
+
+            <div class="card form-card" style="margin-top: 20px;">
+                <h2>3. Login</h2>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" value="test@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPass" value="password123">
+                </div>
+                <button onclick="testApi('api/login.php', 'loginEmail', 'loginPass')">Login</button>
+                <div id="response_login" class="response-area">Response will appear here...</div>
+            </div>
+        </div>
+
+        <!-- Treatments Section -->
+        <div id="treatmentsSection" class="section hidden">
+            <div class="card form-card">
+                <h2>1. Create Treatment</h2>
+                <div class="form-group">
+                    <label>Doctor ID</label>
+                    <input type="number" id="treatDocId" value="1">
+                </div>
+                <div class="form-group">
+                    <label>Patient ID</label>
+                    <input type="number" id="treatPatId" value="2">
+                </div>
+                <div class="form-group">
+                    <label>Op Type ID</label>
+                    <input type="number" id="treatOpId" value="1">
+                </div>
+                <div class="form-group">
+                    <label>Clinical Notes</label>
+                    <textarea id="treatNotes">Initial checkup notes...</textarea>
+                </div>
+                <button
+                    onclick="testApi('api/create_treatment.php', 'treatDocId', 'treatPatId', 'treatOpId', 'treatNotes')">Create</button>
+                <div id="response_create_treatment" class="response-area">Response will appear here...</div>
+            </div>
+
+            <div class="card form-card" style="margin-top: 20px;">
+                <h2>2. Get Treatments</h2>
+                <div class="form-group">
+                    <label>User ID</label>
+                    <input type="number" id="getTreatUser" value="1">
+                </div>
+                <div class="form-group">
+                    <label>Role</label>
+                    <select id="getTreatRole">
+                        <option value="doctor">Doctor</option>
+                        <option value="patient">Patient</option>
+                    </select>
+                </div>
+                <button onclick="testApiGet('api/get_treatments.php', 'getTreatUser', 'getTreatRole')">Fetch</button>
+                <div id="response_get_treatments" class="response-area">Response will appear here...</div>
+            </div>
+        </div>
+
+        <!-- PDF & Signatures Section -->
+        <div id="pdfSection" class="section hidden">
+            <div class="card form-card">
+                <h2>1. Submit Patient Signature</h2>
+                <div class="form-group">
+                    <label>Treatment ID</label>
+                    <input type="number" id="sigTreatId" value="1">
+                </div>
+                <div class="form-group">
+                    <label>Signature (Placeholder Base64)</label>
+                    <textarea id="sigBase64"
+                        rows="3">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==</textarea>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" id="sigConfirm" checked> I confirm my signature</label>
+                </div>
+                <button
+                    onclick="testApi('api/submit_patient_signature.php', 'sigTreatId', 'sigBase64', 'sigConfirm')">Submit
+                    & Generate PDF</button>
+                <div id="response_submit_patient_signature" class="response-area">Response will appear here...</div>
+            </div>
+
+            <div class="card form-card" style="margin-top: 20px;">
+                <h2>2. Get Operation Types</h2>
+                <button onclick="testApiGet('api/get_operation_types.php')">Fetch All Types</button>
+                <div id="response_get_operation_types" class="response-area">Response will appear here...</div>
+            </div>
+        </div>
+
+        <!-- Global Result Display (Optional) -->
+    </div>
+
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.section').forEach(s => s.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+            document.getElementById(section + 'Section').classList.remove('hidden');
+            event.target.classList.add('active');
+        }
+
+        async function testApi(endpoint, ...fieldIds) {
+            const responseDiv = document.getElementById('response_' + endpoint.split('/').pop().replace('.php', ''));
+            responseDiv.innerHTML = "Sending request...";
+
+            const payload = {};
+            fieldIds.forEach(id => {
+                const el = document.getElementById(id);
+                if (el.type === 'checkbox') {
+                    payload[id.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`).replace(/^[a-z]+_/, '')] = el.checked;
+                } else if (el.type === 'number') {
+                    payload[id.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`).replace(/^[a-z]+_/, '')] = parseInt(el.value);
+                } else {
+                    // Map frontend ID back to API key (crude mapping)
+                    let key = id.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+                    if (key.startsWith('otp_')) key = key.replace('otp_', '');
+                    if (key.startsWith('verify_')) key = key.replace('verify_', '');
+                    if (key.startsWith('login_')) key = key.replace('login_', '');
+                    if (key.startsWith('treat_')) key = key.replace('treat_', '');
+                    if (key.startsWith('sig_')) key = key.replace('sig_', '');
+                    if (key === 'pass') key = 'password';
+
+                    payload[key] = el.value;
+                }
+            });
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await response.json();
+                responseDiv.innerHTML = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseDiv.innerHTML = "Error: " + error.message;
+            }
+        }
+
+        async function testApiGet(endpoint, ...fieldIds) {
+            const responseDiv = document.getElementById('response_' + endpoint.split('/').pop().replace('.php', ''));
+            responseDiv.innerHTML = "Sending request...";
+
+            let url = endpoint;
+            if (fieldIds.length > 0) {
+                const params = new URLSearchParams();
+                fieldIds.forEach(id => {
+                    const el = document.getElementById(id);
+                    let key = id.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+                    if (key.startsWith('get_treat_')) key = key.replace('get_treat_', '');
+                    params.append(key, el.value);
+                });
+                url += '?' + params.toString();
+            }
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                responseDiv.innerHTML = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseDiv.innerHTML = "Error: " + error.message;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
