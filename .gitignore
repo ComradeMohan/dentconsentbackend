@@ -4,8 +4,44 @@ composer.phar
 composer.lock
 
 # Uploads and User Data
-uploads/
-api/uploads/
+uploads/*
+!uploads/.gitkeep
+api/uploads/*
+!api/uploads/.gitkeep
+
+# Whitelist specific subdirectories and their .gitkeep files
+!uploads/consent_forms/
+!uploads/consent_forms/.gitkeep
+!uploads/educational/
+!uploads/educational/.gitkeep
+!api/uploads/consent_forms/
+!api/uploads/consent_forms/.gitkeep
+!api/uploads/educational/
+!api/uploads/educational/.gitkeep
+!api/uploads/images/
+!api/uploads/images/.gitkeep
+!api/uploads/profile_images/
+!api/uploads/profile_images/.gitkeep
+!api/uploads/signatures/
+!api/uploads/signatures/.gitkeep
+
+# Ignore all files in these subdirectories EXCEPT .gitkeep
+uploads/consent_forms/*
+!uploads/consent_forms/.gitkeep
+uploads/educational/*
+!uploads/educational/.gitkeep
+api/uploads/consent_forms/*
+!api/uploads/consent_forms/.gitkeep
+api/uploads/educational/*
+!api/uploads/educational/.gitkeep
+api/uploads/images/*
+!api/uploads/images/.gitkeep
+api/uploads/profile_images/*
+!api/uploads/profile_images/.gitkeep
+api/uploads/signatures/*
+!api/uploads/signatures/.gitkeep
+
+# Global File Type Ignores
 *.pdf
 *.png
 *.jpg
@@ -14,7 +50,7 @@ api/uploads/
 *.mp4
 *.webm
 
-# Whitelist Mandatory Images
+# Whitelist Mandatory Root Images
 !tiangle.png
 !circulear.png
 
